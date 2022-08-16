@@ -1,0 +1,36 @@
+/* Page load animation */
+.home-once{
+    opacity: 0;
+}
+.home-once-active {
+    transition: opacity 1s linear;
+}
+.home-once-to {
+    opacity: 1;
+}
+
+
+// Slide out
+.home-leave {
+    transform: translateX(0%);
+}
+.home-leave-active {
+    transition: transform 0.5s var(--easing);
+}
+.home-leave-to {
+    transform: translateX(100%);
+}
+
+// Slide in
+.home-enter {
+    transform: translateX(-100%);
+}
+.home-enter-active {
+    transition: transform 0.5s var(--easing);
+}
+.home-enter-to {
+    transform: translateX(0%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
